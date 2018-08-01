@@ -38,9 +38,9 @@ endif
 # Exclude linux-ppc64e6500
 EXCLUDE_ARCHS = linux-ppc64e6500
 
-APP:=edgeApp
+APP:=calibApp
 APPDB:=$(APP)/Db
-APPSRC:=$(APP)/edgeSrc
+APPSRC:=$(APP)/calibSrc
 
 # Provide the linker with the list of libraries
 # required by OpenCV
