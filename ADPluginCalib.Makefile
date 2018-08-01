@@ -42,6 +42,8 @@ APP:=edgeApp
 APPDB:=$(APP)/Db
 APPSRC:=$(APP)/edgeSrc
 
+# Provide the linker with the list of libraries
+# required by OpenCV
 USR_LDFLAGS += $(shell pkg-config --libs opencv)
 
 # https://gcc.gnu.org/wiki/FAQ#Wnarrowing
@@ -49,9 +51,9 @@ USR_LDFLAGS += $(shell pkg-config --libs opencv)
 # -std=c++11 
 USR_CXXFLAGS += -Wno-narrowing
 
-DBDS += $(APPSRC)/NDPluginEdge.dbd
-SOURCES += $(APPSRC)/NDPluginEdge.cpp
-#HEADERS += $(APPSRC)/NDPluginEdge.h
+DBDS += $(APPSRC)/NDPluginCalib.dbd
+SOURCES += $(APPSRC)/NDPluginCalib.cpp
+#HEADERS += $(APPSRC)/NDPluginCalib.h
 
 # # We don't have LIB_INSTALLS, so will tackle later
 # #ifeq (linux-x86_64, $(findstring linux-x86_64, $(T_A)))
@@ -64,7 +66,7 @@ endif
 # We have to convert all to db 
 TEMPLATES += $(wildcard $(APPDB)/*.db)
 
-# TEMPLATES += $(APPDB)/pluginEdge.template
+# TEMPLATES += $(APPDB)/pluginCalib.template
 
 ## This RULE should be used in case of inflating DB files 
 ## db rule is the default in RULES_DB, so add the empty one

@@ -1,5 +1,5 @@
 #
-EPICS_MODULE_NAME:=ADPluginEdge
+EPICS_MODULE_NAME:=ADPluginCalib
 EPICS_MODULE_TAG:=R1-2
 #
 E3_MODULE_VERSION:=develop
@@ -21,7 +21,7 @@ E3_MODULE_SRC_PATH:=$(EPICS_MODULE_NAME)-dev
 E3_MODULE_MAKEFILE:=$(EPICS_MODULE_NAME).Makefile
 
 #export DEV_GIT_URL:="https://where your git repo"
-E3_MODULE_DEV_GITURL:="https://github.com/areaDetector/ADPluginEdge"
+E3_MODULE_DEV_GITURL:="https://github.com/areaDetector/ADPluginCalib"
 
 # The definitions shown below can also be placed in an untracked CONFIG_MODULE_DEV.local
 -include $(TOP)/configure/CONFIG_MODULE_DEV.local

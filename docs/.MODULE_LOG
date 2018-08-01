@@ -5,12 +5,12 @@ User               : wayne
 Log Time           : 2018Jul16-1747-53CEST
 e3 repo Hash       : 9e3f1c0
 >> 
-EPICS_MODULE_NAME  :                                                     ADPluginEdge
-E3_MODULE_SRC_PATH :                                                     ADPluginEdge
+EPICS_MODULE_NAME  :                                                    ADPluginCalib
+E3_MODULE_SRC_PATH :                                                    ADPluginCalib
 EPICS_MODULE_URL   :                                  https://github.com/areaDetector
 E3_TARGET_URL      :                                    https://github.com/waynelewis
 >> 
-e3 module name     :                                                  e3-ADPluginEdge
-e3 module url full :                     https://github.com/areaDetector/ADPluginEdge
-e3 target url full :                    https://github.com/waynelewis/e3-ADPluginEdge
+e3 module name     :                                                 e3-ADPluginCalib
+e3 module url full :                    https://github.com/areaDetector/ADPluginCalib
+e3 target url full :                   https://github.com/waynelewis/e3-ADPluginCalib
 >> 
